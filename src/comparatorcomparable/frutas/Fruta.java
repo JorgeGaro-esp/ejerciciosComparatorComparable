@@ -8,7 +8,7 @@ package comparatorcomparable.frutas;
  *
  * @author Jorge Garcia Rodriguez
  */
-public class Fruta implements Comparable<Fruta> {
+public class Fruta {
     private String nombre;
     
     //Constructor
@@ -34,9 +34,6 @@ public class Fruta implements Comparable<Fruta> {
         return "Fruta{" + "nombre=" + nombre + '}';
     }
 
-    @Override
-    public int compareTo(Fruta o) {
-        return this.nombre.compareTo(o.getNombre());
-    }
+
     
 }

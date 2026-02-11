@@ -7,6 +7,7 @@ package comparatorcomparable.frutas;
 import java.util.Set;
 import java.util.TreeSet;
 import comparatorcomparable.frutas.Fruta;
+import java.util.Comparator;
 
 /**
  *
@@ -19,6 +20,15 @@ public class PrincipalFruta {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+            Comparator<Fruta> compararPorLongitud = new Comparator<Fruta>(){
+                @Override
+                public int compare(Fruta f1, Fruta f2) {
+                    return Integer.compare(f1.getNombre().length(), f2.getNombre().length());
+                }
+            
+            };
+        
         Set<Fruta> frutas = new TreeSet<>();
         frutas.add(new Fruta("Fresa"));
         frutas.add(new Fruta("Banana"));
