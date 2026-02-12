@@ -19,10 +19,17 @@ public class PrincipalPersona {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Set<Persona> personas = new TreeSet<>();
+        Set<Persona> personas = new TreeSet<>(new compararPorEdadYNombre());
         personas.add(new Persona("Jorge",22));
         personas.add(new Persona("Sergio",21));
         personas.add(new Persona("Fatma",23));
+        personas.add(new Persona("Azucena",40));
+        personas.add(new Persona("Zapatero",40));
+        
+        for (Persona persona:personas) {
+            System.out.println(persona);
+        }
+        
     }
     
 }
