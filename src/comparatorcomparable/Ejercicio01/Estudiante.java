@@ -41,7 +41,7 @@ public class Estudiante implements Comparable<Estudiante>  {
 
     @Override
     public String toString() {
-        return "nombre=" + nombre + ", promedio=" + promedio;
+        return "Nombre: " + nombre + ", Promedio: " + promedio;
     }
 
     @Override

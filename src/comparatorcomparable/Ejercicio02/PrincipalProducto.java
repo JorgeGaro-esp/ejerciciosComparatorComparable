@@ -27,7 +27,7 @@ public class PrincipalProducto {
             }
         };
         
-        Set<Producto> productos = new TreeSet<>(ordenAlfabetico);
+        Set<Producto> productos = new TreeSet<>(new compararPorNombre());
         
         productos.add(new Producto("Tornillo",15.99));
         productos.add(new Producto("Clavo",9.99));
